@@ -1,0 +1,16 @@
+Take all teams and wrestle Wednesdays, and only ONCE
+no repeat matches
+~14 teams, but only 8/9 weeks, 14 teams, 7 duals every Wednesday
+Tri-meets are used to make up time
+Do not need specific dates, just week 1, week 2, week 3, etc...
+Don't want best teams to have tri-meets, have worse teams in tri-meets
+Smaller teams tend to be lower seeded
+Take in teams and seed (1-x(14))
+Remember previously made schedules
+Home/away matches on an every-other-year basis
+Try to alternate home and away, but not necessary
+Best 2 teams face off last week of the season
+Best team plays worst team first, slowly inreases in difficulty
+Start building last meet (1v2, 3v4, 5v6... 13v14(v15)) then build off of that?
+Last week matches MUST be set up like that
+No Bye weeks
