@@ -15,4 +15,6 @@ class schedule {
         std::vector<team> teams;
         
 
-}
+};
+
+#endif

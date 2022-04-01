@@ -17,4 +17,6 @@ class meet {
         team team1;
         team team2;
 
-}
+};
+
+#endif
