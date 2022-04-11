@@ -16,6 +16,7 @@ class meet {
     private:
         team team1;
         team team2;
+        team team3;
 
 };
 
