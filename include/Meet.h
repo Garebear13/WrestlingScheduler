@@ -12,6 +12,7 @@ class meet {
 
         team getTeam1() const;
         team getTeam2() const;
+        team getTeam3() const;
 
     private:
         team team1;

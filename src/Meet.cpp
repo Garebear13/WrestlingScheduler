@@ -26,3 +26,9 @@ team meet::getTeam2() const {
     return this->team2;
     
 }
+
+team meet::getTeam3() const {
+    
+    return this->team3;
+    
+}
