@@ -1,4 +1,4 @@
-#include "..\\include\\Team.h"
+#include "Team.h"
 #include <iostream>
 
 bool team::hasPlayed(team opponent) const {
@@ -26,6 +26,18 @@ void team::setSeed(int in) {
     
 }
 
+int team::getSeed() const {
+    
+    return this->seed;
+    
+}
+
+std::string team::getTown() const {
+    
+    return this->town;
+    
+}
+
 void team::meet(team team1, team team2) {
     
     team1.teamsPlayed.push_back(team2);
@@ -46,9 +58,14 @@ void team::meet(team team1, team team2, team team3) {
     
 }
 
-void team::printTeam() const {
+void team::printTeamInfo() const {
     
     std::cout << this->getTown() << " " << this->getSeed() << std::endl;
+    
+}
+
+void team::printPlayedTeams() const {
+    
     std::cout << "Teams Played: " << std::endl;
     for(int i = 0; i < this->teamsPlayed.size(); i++) {
         std::cout << '\t' << this->teamsPlayed[i].town << " " << this->teamsPlayed[i].seed << std::endl;

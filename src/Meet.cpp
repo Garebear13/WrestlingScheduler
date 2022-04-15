@@ -1,4 +1,4 @@
-#include "..\\include\\Meet.h"
+#include "Meet.h"
 
 meet::meet(team team1, team team2) {
     
