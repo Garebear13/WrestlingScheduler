@@ -18,7 +18,8 @@ class team {
         void meet(team team1, team team2);
         void meet(team team1, team team2, team team3);
 
-        void printTeam() const;
+        void printTeamInfo() const;
+        void printPlayedTeams() const;
 
     
     private:
