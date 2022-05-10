@@ -8,6 +8,7 @@ class meet {
     public:
 
         meet(team team1, team team2);
+
         meet(team team1, team team2, team team3);
 
         team getTeam1() const;

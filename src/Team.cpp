@@ -1,11 +1,28 @@
 #include "Team.h"
 #include <iostream>
 
+team::team() {
+    this->town = "EMPTY";
+    this->seed = -1;
+}
+
+team::team(std::string town) {
+    this->town = town;
+    this->seed = 0;
+}
+
+team::team(std::string town, int seed) {
+    this->town = town;
+    this->seed = seed;
+}
+
 bool team::hasPlayed(team opponent) const {
     
     bool played = false;
+
+    int numTeams = this->teamsPlayed.size();
     
-    for(int i = 0; i < this->teamsPlayed.size(); i++) {
+    for(int i = 0; i < numTeams; i++) {
         if(this->teamsPlayed[i] == opponent) {
             played = true;
         }
@@ -60,15 +77,15 @@ void team::meet(team team1, team team2, team team3) {
 
 void team::printTeamInfo() const {
     
-    std::cout << this->getTown() << " " << this->getSeed() << std::endl;
+    std::cout << this->getTown() << "\tSeed: " << this->getSeed() << std::endl;
     
 }
 
 void team::printPlayedTeams() const {
     
     std::cout << "Teams Played: " << std::endl;
-    for(int i = 0; i < this->teamsPlayed.size(); i++) {
-        std::cout << '\t' << this->teamsPlayed[i].town << " " << this->teamsPlayed[i].seed << std::endl;
+    for(int i = 0; i < (int) this->teamsPlayed.size(); i++) {
+        std::cout << '\t' << this->teamsPlayed[i].town << "\tSeed: " << this->teamsPlayed[i].seed << std::endl;
     }
     
 }

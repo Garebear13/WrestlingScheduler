@@ -7,6 +7,13 @@
 class team {
 
     public:
+
+        team();
+
+        team(std::string town);
+
+        team(std::string town, int seed);
+
         bool hasPlayed(team opponent) const;
 
         std::string getTown() const;
@@ -23,12 +30,10 @@ class team {
 
     
     private:
-        std::string town;   //Plymouth
+        std::string town;   //ie Plymouth
 
-        int seed;   //1-n
-
-        //bool homeYear;      //home or away(y/n)
-
+        int seed;   //1 to n
+        
         std::vector<team> teamsPlayed;   //vector of teams played
 
 };
